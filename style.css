@@ -1,6 +1,6 @@
 body {
   margin:0;
-  padding:10%;
+  padding:0;
 }
 p {
   font-family: 'EB Garamond', serif;
@@ -17,6 +17,7 @@ a, a:hover, a:visited {
 
 .header {
   position: relative;
+  padding: 8% 10% 10px 10%;
 }
 .header h1 {
   font-family: 'Oswald', sans-serif;
@@ -24,18 +25,21 @@ a, a:hover, a:visited {
   font-size: 1.2em;
   text-transform: uppercase;
   margin:0px;
-  padding:0;
 }
 .header h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 1.6em;
-  margin:0;
-  padding:0;
+  margin:0px;
+}
+
+.body {
+  position: relative;
+  padding: 0 10% 9% 10%;
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -61,9 +65,16 @@ a, a:hover, a:visited {
 }
 .right {
   width: 25%;
+  text-align: center;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
